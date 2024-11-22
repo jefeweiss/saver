@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Jefeweiss"
+    },
+    "motivations": {
+      "@value": "I think that Cardano governance is a grand experiment. This is a unique opportunity to participate in something that could end up being momentous.  I decided to participate because I felt like we were all being given an opportunity and I had to accept it.  "
+    },
+    "objectives": {
+      "@value": "The continued technical development of Cardano is my highest priority.  I will consider votes that have to do with marketing and other areas, but my intent is to fund Cardano 2.0. I would like to see a lot of movement towards quantum resistance. I support Intersect and encourage all to participate.  It's not some shadowy organization, anyone can join and participate to whatever extent they feel like they can.  I wish I had time to participate full time, because I think that would be very rewarding."
+    },
+    "paymentAddress": {
+      "@value": "addr1q8ydpyrxkmwvyk2wwfh76rtug5jf2nahmahwalvrnu5u5cfcdjl6prvvd8jc8errjnena0nv23tgdm7dra8sllh0whlq03kh07"
+    },
+    "qualifications": {
+      "@value": "I run a company that employees around 50 people, so I do have some experience with budgets and managing people. I follow a lot of discussions and debates about Cardano on different sites and occasionally participate, if I feel like I can add something of value. Other than that, I don't consider myself particularly qualified.  I'm surprised that people have delegated to me, really."
+    },
+    "references": []
+  }
+}
